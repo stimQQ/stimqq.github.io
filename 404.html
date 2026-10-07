@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<script>
+  // Deep links into the project sites that moved to the apimodels organization
+  var moved = ['gpt-image-2-prompts', 'stunning-minimax-h3-prompts', 'apimodels-api-demo']
+  var first = location.pathname.split('/')[1]
+  if (moved.indexOf(first) !== -1) location.replace('https://apimodels.github.io' + location.pathname + location.search + location.hash)
+</script>
+</head>
+<body>
+<p>Page not found. The apimodels.app projects now live at <a href="https://github.com/apimodels">github.com/apimodels</a>.</p>
+</body>
+</html>
